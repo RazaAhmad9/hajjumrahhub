@@ -1,1 +1,5 @@
-<?php // Silance is Golden
+<?php include "includes/header.php"; ?>
+
+
+
+<?php include "includes/footer.php";?>
