@@ -10,5 +10,6 @@
     <!-- Footer Section End -->
     <!-- Js Files -->
     <script src="js/navbar.js"></script>
+    <script src="js/up-form.js"></script>
 </body>
 </html>

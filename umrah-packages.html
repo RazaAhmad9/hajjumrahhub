@@ -37,37 +37,19 @@
           <label for="email">Email:</label>
           <input type="email" id="email" name="email" />
         </div>
-        <div class="up-form__group up-form__group__items">
+        <div class="up-form__group">
           <div class="up-form__group__inner">
             <label for="mak-nights">Nights:</label>
             <select id="mak-nights" name="mak-nights" required>
               <option value="">MAK</option>
-              <option value="mak-1">MAK 1</option>
-              <option value="mak-2">MAK 2</option>
-              <option value="mak-3">MAK 3</option>
-              <option value="mak-4">MAK 4</option>
-              <option value="mak-5">MAK 5</option>
-              <option value="mak-6">MAK 6</option>
-              <option value="mak-7">MAK 7</option>
-              <option value="mak-8">MAK 8</option>
-              <option value="mak-9">MAK 9</option>
-              <option value="mak-10">MAK 10</option>
+              <!-- other options -->
             </select>
           </div>
           <div class="up-form__group__inner">
             <label for="med-nights">Nights:</label>
             <select id="med-nights" name="med-nights" required>
               <option value="">MED</option>
-              <option value="med-1">MED 1</option>
-              <option value="med-2">MED 2</option>
-              <option value="med-3">MED 3</option>
-              <option value="med-4">MED 4</option>
-              <option value="med-5">MED 5</option>
-              <option value="med-6">MED 6</option>
-              <option value="med-7">MED 7</option>
-              <option value="med-8">MED 8</option>
-              <option value="med-9">MED 9</option>
-              <option value="med-10">MED 10</option>
+              <!-- other options -->
             </select>
           </div>
         </div>
@@ -81,43 +63,50 @@
             <option value="Quad">Quad</option>
           </select>
         </div>
-        <div class="guest-dropdown up-form__group">
-          <label for="guestInput">Travellers:</label>
-          <input type="text" id="guestInput" placeholder="Select Guests" readonly onclick="toggleDropdown()" />
-     <div class="dropdown-content" id="guestDropdown">
-    <div class="up-form-item">
-      <label for="adults">Adults:</label>
-      <div class="up-form-item__inner">
-        <button type="button" onclick="updateGuests('adults', -1)">−</button>
-        <input type="text" id="adults" value="0" readonly />
-        <button type="button" onclick="updateGuests('adults', 1)">+</button>
-      </div>
-    </div>
-    <div class="up-form-item">
-        <label for="children">Children:</label>
-     <div class="up-form-item__inner">
-
-         <button type="button" onclick="updateGuests('children', -1)">−</button>
-         <input type="text" id="children" value="0" readonly />
-         <button type="button" onclick="updateGuests('children', 1)">+</button>
-         
-     </div>
-    </div>
-    <div class="up-form-item">
-        <label for="infants">Infants:</label>
-      <div class="up-form-item__inner">
-
-          <button type="button" onclick="updateGuests('infants', -1)">−</button>
-          <input type="text" id="infants" value="0" readonly />
-          <button type="button" onclick="updateGuests('infants', 1)">+</button>
-        </div>
-
-    </div>
-  </div>
-</div>
-<div class="up-form__group">
-          <label for="answer">Answer:</label>
-          <input type="text" id="answer" name="answer" required />
+        <div class="up-form__group">
+          <div class="dropdown">
+            <div class="dropdown-btn" onclick="toggleDropdown()">
+              Select Guests (Max 9)
+            </div>
+            <div class="dropdown-content" id="guestDropdown">
+              <div>
+                <span class="label">Adults</span>
+                <div class="counter">
+                  <button type="button" onclick="updateGuests('adults', -1)">
+                    −
+                  </button>
+                  <input type="number" id="adults" value="0" readonly />
+                  <button type="button" onclick="updateGuests('adults', 1)">
+                    +
+                  </button>
+                </div>
+              </div>
+              <div>
+                <span class="label">Children</span>
+                <div class="counter">
+                  <button type="button" onclick="updateGuests('children', -1)">
+                    −
+                  </button>
+                  <input type="number" id="children" value="0" readonly />
+                  <button type="button" onclick="updateGuests('children', 1)">
+                    +
+                  </button>
+                </div>
+              </div>
+              <div>
+                <span class="label">Infants</span>
+                <div class="counter">
+                  <button type="button" onclick="updateGuests('infants', -1)">
+                    −
+                  </button>
+                  <input type="number" id="infants" value="0" readonly />
+                  <button type="button" onclick="updateGuests('infants', 1)">
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="up-form__group up-form__footer">
           <button type="submit">Submit</button>

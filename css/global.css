@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #0e97ab;
+  --primary-color: #016b79;
   --secondary-color: #ccdc33;
   --white-color: #fff;
   --black-color: #000;
@@ -40,7 +40,7 @@ p {
 }
 
 .container {
-  padding: 1rem;
+  width: 100%;
   max-width: 1560px;
   margin: auto;
 }

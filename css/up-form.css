@@ -1,0 +1,106 @@
+.up-form {
+  width: 100%;
+  background-color: var(--primary-color);
+  padding: 30px;
+}
+
+.up-form form {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.up-form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.up-form__group.up-form__group__items {
+  flex-direction: row;
+}
+
+.up-form__group.up-form__group__items .up-form__group__inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 8px;
+}
+
+.up-form__group label {
+  font-size: var(--regular-font-size);
+  color: var(--white-color);
+}
+
+.up-form__group select,
+input {
+  height: 48px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  border: none;
+  border-radius: 3px;
+}
+
+.guest-dropdown {
+  position: relative;
+}
+
+#guestInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  text-align: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 10;
+  top: 100%;
+}
+
+.up-form-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5px 0;
+}
+
+.up-form-item__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.up-form-item button {
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  background: var(--white-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 3px;
+}
+
+.up-form-item input {
+  width: 100%;
+  text-align: center;
+  border: 2px solid var(--primary-color);
+  font-size: 16px;
+  height: 30px;
+  border-radius: 3px;
+}
+
+.up-form-item label {
+  color: var(--primary-color);
+}

@@ -1,3 +1,7 @@
-.up-banner.up-home {
+.up-home {
   background-image: url("/images/umrah-package-banner-image.webp");
+}
+
+.up-home .container {
+  margin: 0;
 }
