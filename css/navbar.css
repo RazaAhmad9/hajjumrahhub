@@ -1,17 +1,26 @@
 /* Header */
 header {
+  position: sticky;
+  top: 0;
   background: transparent;
-  width: 100%;
-  z-index: 1000;
   transition: all 0.3s ease-in-out;
+  z-index: 1000;
+  margin-bottom: -126px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
+}
+
+header.scrolled {
+  background: var(--primary-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* Logo */
@@ -31,14 +40,18 @@ header .container {
 
 .nav-links a {
   text-decoration: none;
-  color: #1e2a38;
+  color: var(--black-color);
   font-size: 16px;
   font-weight: 600;
   transition: 0.3s;
 }
 
+header.scrolled .nav-links a {
+  color: var(--white-color);
+}
+
 .nav-links a:hover {
-  color: #e67e22;
+  color: var(--secondary-color);
 }
 
 /* Mobile Menu */
@@ -46,7 +59,7 @@ header .container {
   display: none;
   font-size: 24px;
   cursor: pointer;
-  color: #1e2a38;
+  color: var(--black-color);
 }
 
 /* Responsive Design */
@@ -54,7 +67,7 @@ header .container {
   .nav-links {
     display: none;
     flex-direction: column;
-    background: #fff;
+    background: var(--white-color);
     position: absolute;
     top: 60px;
     left: 0;

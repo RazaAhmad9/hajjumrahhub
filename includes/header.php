@@ -18,5 +18,6 @@
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/global.css" type="text/css">
     <link rel="stylesheet" href="css/navbar.css" type="text/css">
+    <link rel="stylesheet" href="css/home.css" type="text/css">
 </head>
 <body>
