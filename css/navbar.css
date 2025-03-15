@@ -6,14 +6,14 @@ header {
   transition: all 0.3s ease-in-out;
   z-index: 1000;
   margin-bottom: -126px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 16px;
 }
 
 header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0;
 }
 
 header.scrolled {
@@ -69,11 +69,18 @@ header.scrolled .nav-links a {
     flex-direction: column;
     background: var(--white-color);
     position: absolute;
-    top: 60px;
+    top: 94px;
     left: 0;
     width: 100%;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     padding: 10px 0;
+  }
+
+  header.scrolled .nav-links {
+    top: 74px;
+  }
+  header.scrolled .nav-links a {
+    color: var(--black-color);
   }
 
   .nav-links li {

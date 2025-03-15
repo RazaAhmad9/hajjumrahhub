@@ -3,16 +3,40 @@
   --secondary-color: #ccdc33;
   --white-color: #fff;
   --black-color: #000;
+
+  --regular-font-size: 16px;
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
 }
 
 h1 {
-  font-size: clamp(2rem, 1.4375rem + 1.875vw, 3.125rem);
+  font-size: clamp(2rem, 1.5rem + 1.666667vw, 3rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 1.125rem + 1.25vw, 2.25rem);
+}
+h3 {
+  font-size: clamp(1.25rem, 0.9375rem + 1.041667vw, 1.875rem);
+}
+h4 {
+  font-size: clamp(1.125rem, 0.9375rem + 0.625vw, 1.5rem);
+}
+h5 {
+  font-size: clamp(1rem, 0.875rem + 0.416667vw, 1.25rem);
+}
+h6 {
+  font-size: clamp(0.875rem, 0.75rem + 0.416667vw, 1.125rem);
+}
+
+p {
+  font-size: var(--regular-font-size);
 }
 
 .container {
@@ -27,7 +51,7 @@ h1 {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 90vh;
+  height: 75vh;
   position: relative;
   display: flex;
   align-items: center;

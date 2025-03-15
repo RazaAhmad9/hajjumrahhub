@@ -13,11 +13,34 @@
         display_page_title_in_head($page_title);
     ?>
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/global.css" type="text/css">
+    <link rel="stylesheet" href="css/font.css" type="text/css">
     <link rel="stylesheet" href="css/navbar.css" type="text/css">
     <link rel="stylesheet" href="css/home.css" type="text/css">
+
+    <!-- Preload Fonts -->
+    <link rel="preload" href="/font/Montserrat-BlackItalic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/font/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/font/Montserrat-Black.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/font/Montserrat-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/font/Montserrat-ExtraLight.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/font/Montserrat-BoldItalic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/font/Montserrat-ExtraBoldItalic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/font/Montserrat-Italic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/font/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/font/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/font/Montserrat-LightItalic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/font/Montserrat-ThinItalic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/font/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/font/Montserrat-SemiBoldItalic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/font/Montserrat-MediumItalic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/font/Montserrat-Thin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/font/Montserrat-Light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/font/Montserrat-ExtraLightItalic.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body>

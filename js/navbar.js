@@ -3,8 +3,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelector(".nav-links");
 
   mobileMenu.addEventListener("click", function () {
-    navLinks.style.display =
-      navLinks.style.display === "flex" ? "none" : "flex";
+    const isOpen = navLinks.style.display === "flex";
+
+    navLinks.style.display = isOpen ? "none" : "flex";
+    mobileMenu.textContent = isOpen ? "☰" : "✖";
   });
 });
 
