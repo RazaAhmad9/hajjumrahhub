@@ -79,7 +79,8 @@ header.scrolled .nav-links a {
   header.scrolled .nav-links {
     top: 74px;
   }
-  header.scrolled .nav-links a {
+  header.scrolled .nav-links a,
+  .nav-links a {
     color: var(--black-color);
   }
 

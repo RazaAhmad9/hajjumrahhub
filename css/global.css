@@ -6,6 +6,8 @@
   --black-color: #000;
   --black-extra-light-color: #000000a6;
   --primary-box-shadow-color: #016b7999;
+  --bg-light-color: #e7f5f7;
+  --grey-color: #dedede5c;
 
   --regular-font-size: 16px;
 
@@ -50,6 +52,14 @@ p {
   margin: auto;
 }
 
+@media only screen and (max-width: 1560px) {
+  .container {
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 .up-banner {
   background-image: url("/images/umrah-package-banner-image.webp");
   background-size: cover;
@@ -80,6 +90,24 @@ p {
 .up-banner .up-banner__heading {
   color: var(--white-color);
   text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .up-banner {
+    height: 85vh;
+  }
+}
+
+@media only screen and (max-width: 948px) {
+  .up-banner {
+    height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 659px) {
+  .up-banner {
+    height: 150vh;
+  }
 }
 
 .primary-button {
@@ -116,4 +144,21 @@ p {
   line-height: 110%;
   margin-bottom: 0;
   color: var(--black-extra-light-color);
+}
+
+.up-scroll-content {
+  max-height: 650px;
+  overflow-y: scroll;
+  text-align: justify;
+  padding: 15px 15px;
+  background-color: var(--grey-color);
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.up-link {
+  color: var(--primary-color);
+  border-bottom: 1px solid;
+  text-decoration: none !important;
+  outline: none !important;
 }
