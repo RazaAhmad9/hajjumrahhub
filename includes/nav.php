@@ -7,7 +7,7 @@
             <nav>
                 <ul class="nav-links">
                     <li><a href="/">Home</a></li>
-                    <li><a href="?page=umrahpackage">Umrah Packages</a></li>
+                    <li><a href="/?page=umrahpackage">Umrah Packages</a></li>
                 </ul>
             </nav>
             <div class="menu-toggle" id="mobile-menu">

@@ -12,6 +12,7 @@
         $page_title = isset($_GET['page']) ? ucfirst($_GET['page']) . " - Trusted Islamic Travel Agency in the UK for Umrah Services" : "Trusted Islamic Travel Agency in the UK for Umrah Services";
         display_page_title_in_head($page_title);
     ?>
+     <link rel="icon" type="image/x-icon" href="/images/favicon.png">
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

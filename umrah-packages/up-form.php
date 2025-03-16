@@ -1,14 +1,10 @@
-<!-- Container Start Here -->
-<div
-  class="up-banner up-<?php echo htmlspecialchars($page, ENT_QUOTES, 'UTF-8'); ?>"
-  id="up-<?php echo htmlspecialchars($page, ENT_QUOTES, 'UTF-8'); ?>"
->
-  <div class="container">
-    <h1 class="up-banner__heading">Umrah Packages</h1>
-    <div class="up-form">
+<div class="up-form">
       <form action="#" method="post">
         <div class="up-form__group">
-          <label for="departure-airport">Departure Airport</label>
+          <div class="up-form__wraper">
+              <img class="up-form__img" src="../images/from.png" width="21" height="15" alt="departure-airport" />
+              <label for="departure-airport">Departure Airport</label>
+          </div>
           <select id="departure-airport" name="departure-airport" required>
             <option value=""></option>
             <option value="Aberdeen (ABZ)">Aberdeen (ABZ)</option>
@@ -31,7 +27,10 @@
           </select>
         </div>
         <div class="up-form__group">
-          <label for="arrival-airport">Arrival Airport</label>
+        <div class="up-form__wraper">
+            <img class="up-form__img" src="../images/to.png" width="26" height="21" alt="arrival-airport" />
+              <label for="arrival-airport">Arrival Airport</label>
+        </div>
           <select id="arrival-airport" name="arrival-airport" required>
             <option value=""></option>
             <option value="Jeddah">Jeddah</option>
@@ -40,20 +39,33 @@
           </select>
         </div>
         <div class="up-form__group">
-          <label for="date">Date:</label>
+        <div class="up-form__wraper">
+            <img class="up-form__img" src="../images/calender.png" width="21" height="21" alt="date" />
+            <label for="date">Date:</label>
+        </div>
           <input type="date" id="date" name="date" required />
         </div>
         <div class="up-form__group">
-          <label for="phone-number">Phone Number:</label>
+        <div class="up-form__wraper">
+            <img class="up-form__img" src="../images/phone.png" width="22" height="18" alt="phone-number" />
+              <label for="phone-number">Phone Number:</label>
+        </div>
           <input type="text" id="phone-number" name="phone-number" required />
         </div>
         <div class="up-form__group">
-          <label for="email">Email:</label>
+        <div class="up-form__wraper">
+            <img class="up-form__img" src="../images/email.png" width="22" height="16" alt="email" />
+              <label for="email">Email:</label>
+
+        </div>
           <input type="email" id="email" name="email" />
         </div>
         <div class="up-form__group up-form__group__items">
           <div class="up-form__group__inner">
-            <label for="mak-nights">Nights:</label>
+          <div class="up-form__wraper">
+              <img class="up-form__img" src="../images/moon.png" width="17" height="19" alt="nights" />
+              <label for="mak-nights">Nights:</label>
+          </div>
             <select id="mak-nights" name="mak-nights" required>
               <option value="">MAK</option>
               <option value="mak-1">MAK 1</option>
@@ -69,7 +81,10 @@
             </select>
           </div>
           <div class="up-form__group__inner">
-            <label for="med-nights">Nights:</label>
+          <div class="up-form__wraper">
+          <img class="up-form__img" src="../images/moon.png" width="17" height="19" alt="nights" />
+              <label for="med-nights">Nights:</label>
+          </div>
             <select id="med-nights" name="med-nights" required>
               <option value="">MED</option>
               <option value="med-1">MED 1</option>
@@ -86,7 +101,10 @@
           </div>
         </div>
         <div class="up-form__group">
-          <label for="rooms">Rooms:</label>
+        <div class="up-form__wraper">
+            <img class="up-form__img" src="../images/rooms.png" width="22" height="16" alt="rooms" />
+            <label for="rooms">Rooms:</label>
+        </div>
           <select id="rooms" name="rooms" required>
             <option value=""></option>
             <option value="Single">Single</option>
@@ -96,7 +114,10 @@
           </select>
         </div>
         <div class="guest-dropdown up-form__group">
+        <div class="up-form__wraper">
+          <img class="up-form__img" src="../images/travellers.png" width="21" height="20" alt="travellers" />
           <label for="guestInput">Travellers:</label>
+        </div>
           <input
             type="text"
             id="guestInput"
@@ -106,7 +127,9 @@
           />
           <div class="dropdown-content" id="guestDropdown">
             <div class="up-form-item">
-              <label for="adults">Adults:</label>
+            <div class="up-form__wraper">
+                <label for="adults">Adults:</label>
+            </div>
               <div class="up-form-item__inner">
                 <button type="button" onclick="updateGuests('adults', -1)">
                   −
@@ -118,7 +141,9 @@
               </div>
             </div>
             <div class="up-form-item">
-              <label for="children">Children:</label>
+            <div class="up-form__wraper">
+                <label for="children">Children:</label>
+            </div>
               <div class="up-form-item__inner">
                 <button type="button" onclick="updateGuests('children', -1)">
                   −
@@ -130,7 +155,9 @@
               </div>
             </div>
             <div class="up-form-item">
-              <label for="infants">Infants:</label>
+            <div class="up-form__wraper">
+                <label for="infants">Infants:</label>
+            </div>
               <div class="up-form-item__inner">
                 <button type="button" onclick="updateGuests('infants', -1)">
                   −
@@ -144,15 +171,14 @@
           </div>
         </div>
         <div class="up-form__group">
-          <label for="answer">Answer:</label>
+        <div class="up-form__wraper">
+            <img class="up-form__img" src="../images/checkanswer.png" width="21" height="15" alt="answer" />
+            <label for="answer">Answer:</label>
+        </div>
           <input type="text" id="answer" name="answer" required />
         </div>
         <div class="up-form__group up-form__footer">
-          <label for="submit">Submit:</label>
           <button type="submit" class="primary-button">Submit</button>
         </div>
       </form>
     </div>
-  </div>
-</div>
-<!-- Container Ends Here -->

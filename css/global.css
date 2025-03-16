@@ -54,7 +54,7 @@ p {
   height: 75vh;
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
 }
 
@@ -70,7 +70,23 @@ p {
 }
 .up-banner .container {
   z-index: 2;
+  margin: 0;
 }
 .up-banner .up-banner__heading {
   color: var(--white-color);
+  text-align: center;
+}
+
+.primary-button {
+  background: var(--secondary-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-color: var(--secondary-color);
+  padding: 8px 30px;
+  height: 48px;
 }
