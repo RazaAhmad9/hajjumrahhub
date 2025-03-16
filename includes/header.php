@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/home.css" type="text/css">
     <link rel="stylesheet" href="css/umrah-packages.css" type="text/css">
     <link rel="stylesheet" href="css/up-form.css" type="text/css">
+    <link rel="stylesheet" href="css/footer.css" type="text/css">
 
     <!-- Preload Fonts -->
     <link rel="preload" href="/font/Montserrat-BlackItalic.woff2" as="font" type="font/woff2" crossorigin>
