@@ -1,10 +1,15 @@
 :root {
   --primary-color: #016b79;
   --secondary-color: #ccdc33;
+  --secondary-color-hover: #b9c920;
   --white-color: #fff;
   --black-color: #000;
+  --black-extra-light-color: #000000a6;
+  --primary-box-shadow-color: #016b7999;
 
   --regular-font-size: 16px;
+
+  --up-transition: all 0.3s ease;
 }
 
 * {
@@ -89,4 +94,26 @@ p {
   border-color: var(--secondary-color);
   padding: 8px 30px;
   height: 48px;
+  transition: var(--up-transition);
+}
+
+.primary-button:hover {
+  background-color: var(--secondary-color-hover);
+  border-color: var(--secondary-color-hover);
+}
+
+.up-h2-heading {
+  font-weight: 600;
+  line-height: 110%;
+  margin-bottom: 15px;
+  letter-spacing: -1px;
+  color: var(--primary-color);
+}
+
+.up-after-heading-text {
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 110%;
+  margin-bottom: 0;
+  color: var(--black-extra-light-color);
 }

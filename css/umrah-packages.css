@@ -1,3 +1,94 @@
 .up-umrahpackage .up-form {
   transform: translateY(40px);
 }
+
+.up-all-umrah-packages {
+  padding-top: 150px;
+}
+
+.up-all-umrah-packages__wrapper {
+  padding-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.up-all-umrah-packages__item {
+  box-shadow: 0 0 10px 0 var(--primary-box-shadow-color);
+  border-radius: 4px;
+  margin-top: 10px;
+  padding: 12px;
+  background-color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.up-umrah-package__link {
+  width: 100%;
+}
+
+.up-umrah-package__img {
+  aspect-ratio: auto 336 / 280;
+  border-radius: 4px 4px 0 0;
+  display: block;
+  width: 100%;
+}
+
+.up-umrah-package__title,
+.up-umrah-package__title a {
+  font-size: clamp(1.125rem, 0.9375rem + 0.625vw, 1.5rem);
+  color: var(--black-color);
+  text-decoration: none;
+}
+
+.up-umrah-package__tagline {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.up-umrah-package__price {
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--primary-color);
+}
+
+.up-umrah-package__btn {
+  color: var(--black-extra-light-color);
+  font-weight: 700;
+  font-size: var(--regular-font-size);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.up-svg-wrapper {
+  height: 31px;
+  width: 31px;
+  border: 3px solid var(--secondary-color);
+  border-radius: 50%;
+  background-color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--up-transition);
+}
+
+.up-umrah-package__btn svg {
+  width: 9px;
+  height: 11px;
+  fill: var(--secondary-color);
+  transition: var(--up-transition);
+}
+
+.up-umrah-package__btn:hover .up-svg-wrapper {
+  background-color: var(--secondary-color);
+}
+
+.up-umrah-package__btn:hover svg {
+  fill: var(--white-color);
+}
