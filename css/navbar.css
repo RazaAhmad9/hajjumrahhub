@@ -41,9 +41,10 @@ header.scrolled {
 .nav-links a {
   text-decoration: none;
   color: var(--white-color);
-  font-size: 16px;
-  font-weight: 600;
-  transition: 0.3s;
+  transition: var(--up-transition);
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
 header.scrolled .nav-links a {
@@ -91,5 +92,68 @@ header.scrolled .nav-links a {
 
   .menu-toggle {
     display: block;
+  }
+}
+
+/* Dropdown Styles */
+
+nav .dropdown svg {
+  width: 15px;
+  height: 15px;
+  fill: var(--white-color);
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--white-color);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 15rem;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.nav-links .dropdown-menu li {
+  text-align: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+.nav-links .dropdown-menu a,
+header.scrolled .nav-links .dropdown-menu a {
+  color: var(--grey-light-color);
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav-links .dropdown:hover .dropdown-menu {
+  display: block;
+}
+/* Mobile Dropdown Fix */
+@media screen and (max-width: 768px) {
+  .nav-links .dropdown-menu {
+    position: static;
+    display: none;
+    width: 100%;
+    background: var(--white-color);
+  }
+
+  .nav-links .dropdown.open .dropdown-menu {
+    display: block;
+  }
+
+  .nav-links .dropdown-toggle {
+    display: block;
+    width: 100%;
+    padding: 10px;
   }
 }
