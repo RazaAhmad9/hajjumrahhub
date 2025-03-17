@@ -47,6 +47,15 @@ header.scrolled {
   font-weight: 400;
 }
 
+@media only screen and (max-width: 1360px) {
+  .nav-links li {
+    margin: 0 10px;
+  }
+  .nav-links a {
+    font-size: 15px;
+  }
+}
+
 header.scrolled .nav-links a {
   color: var(--white-color);
 }
@@ -117,6 +126,9 @@ nav .dropdown svg {
   min-width: 15rem;
   padding: 10px 0;
   z-index: 1000;
+  list-style: none;
+  border: 1px solid var(--black-color);
+  border-radius: 3px;
 }
 
 .nav-links .dropdown-menu li {
@@ -126,13 +138,63 @@ nav .dropdown svg {
   margin-bottom: 5px;
 }
 
+.nav-links li:not(.dropdown) svg {
+  width: 30px;
+  height: 20px;
+  fill: var(--secondary-color);
+}
+
+.nav-links__email a,
+.nav-links__phone a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.nav-links__phone svg {
+  display: none;
+}
+
+@media only screen and (max-width: 1150px) {
+  .nav-links__email {
+    display: none;
+  }
+  .nav-links__phone svg {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .nav-links__phone svg {
+    display: block;
+  }
+  .nav-links__phone span {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-links__phone svg,
+  .nav-links__phone span {
+    display: block;
+  }
+  .nav-links__email {
+    display: block;
+  }
+}
+
 .nav-links .dropdown-menu a,
 header.scrolled .nav-links .dropdown-menu a {
   color: var(--grey-light-color);
   display: block;
-  padding: 10px 15px;
   text-decoration: none;
   font-size: 14px;
+  transition: (--up-transition);
+}
+
+.nav-links .dropdown-menu a:hover {
+  color: var(--secondary-color);
 }
 
 .nav-links .dropdown:hover .dropdown-menu {
@@ -144,7 +206,19 @@ header.scrolled .nav-links .dropdown-menu a {
     position: static;
     display: none;
     width: 100%;
-    background: var(--white-color);
+    box-shadow: none !important;
+    border: none;
+    background-color: var(--bg-light-color);
+    margin-top: 10px;
+  }
+
+  .nav-links .dropdown-menu li {
+    border: none;
+    text-align: center;
+  }
+
+  .nav-links .dropdown-menu li a {
+    color: var(--black-color);
   }
 
   .nav-links .dropdown.open .dropdown-menu {
