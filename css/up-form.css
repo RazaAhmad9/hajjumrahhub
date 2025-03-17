@@ -52,6 +52,7 @@ input {
   font-size: 14px;
   border: none;
   border-radius: 3px;
+  width: 100%;
 }
 
 .guest-dropdown {
