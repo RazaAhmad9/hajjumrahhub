@@ -25,7 +25,7 @@ header.scrolled {
 
 /* Logo */
 .logo img {
-  max-height: 50px;
+  max-height: 80px;
 }
 
 /* Navigation */
@@ -231,3 +231,9 @@ header.scrolled .nav-links .dropdown-menu a {
     padding: 10px;
   }
 }
+
+/* Logo show/hidden */
+
+/* .logo__hidden {
+  display: none;
+} */

@@ -5,7 +5,7 @@
             <div class="footer__columns">
                 <div class="footer_column">
                     <a class="footer_logo_link">
-                        <img class="footer-logo" src="../images/logo.png" alt="Hajj Umrah Hub" width="170" height="52">
+                        <img class="footer-logo" src="../images/al-mutamir-travel-white-logo.png" alt="al-mutamir-travel-white-logo" width="auto" height="80">
                     </a>
                     <div class="footer_column_social">
                         <a href="#"><img class="footer-social-logo" src="../images/facebook.png" alt="facebook-logo" width="100" height="20"></a>

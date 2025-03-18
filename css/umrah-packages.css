@@ -25,6 +25,13 @@
   align-items: center;
   text-align: center;
   padding-bottom: 30px;
+  transition: var(--up-transition);
+}
+.up-all-umrah-packages__item:hover {
+  background-color: var(--primary-color);
+}
+.up-all-umrah-packages__item:hover * {
+  color: var(--white-color);
 }
 .up-umrah-package__link {
   width: 100%;
