@@ -69,7 +69,7 @@ header.scrolled .nav-links a {
   display: none;
   font-size: 24px;
   cursor: pointer;
-  color: var(--black-color);
+  color: var(--white-color);
 }
 
 /* Responsive Design */
@@ -87,7 +87,7 @@ header.scrolled .nav-links a {
   }
 
   header.scrolled .nav-links {
-    top: 74px;
+    top: 104px;
   }
   header.scrolled .nav-links a,
   .nav-links a {
