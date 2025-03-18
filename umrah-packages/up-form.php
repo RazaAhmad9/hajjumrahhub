@@ -1,11 +1,29 @@
 <div class="up-form">
-      <form action="#" method="post">
+<form
+        id="contactForm"
+        class="contact-form"
+        action="https://api.web3forms.com/submit"
+        method="POST"
+      >
+        <input
+          type="hidden"
+          name="access_key"
+          value="ab0c9348-af56-418a-b741-fd2748149933"
+        />
+        <input
+          type="hidden"
+          name="subject"
+          value="New Contact Form Submission from Al Mutamir Travels"
+        />
+        <input type="hidden" name="from_name" value="Al Mutamir Travels" />
+        <input type="hidden" name="redirect" value="http://hajjumrahhub.test/?page=thankyou">
+        <!-- More custom ization options available in the docs: https://docs.web3forms.com -->
         <div class="up-form__group">
           <div class="up-form__wraper">
               <img class="up-form__img" src="../images/from.png" width="21" height="15" alt="departure-airport" />
               <label for="departure-airport">Departure Airport</label>
           </div>
-          <select id="departure-airport" name="departure-airport" required>
+          <select id="departure-airport" name="departure_airport" required>
             <option value=""></option>
             <option value="Aberdeen (ABZ)">Aberdeen (ABZ)</option>
             <option value="Amsterdam (AMS)">Amsterdam (AMS)</option>
@@ -31,7 +49,7 @@
             <img class="up-form__img" src="../images/to.png" width="26" height="21" alt="arrival-airport" />
               <label for="arrival-airport">Arrival Airport</label>
         </div>
-          <select id="arrival-airport" name="arrival-airport" required>
+          <select id="arrival-airport" name="arrival_airport" required>
             <option value=""></option>
             <option value="Jeddah">Jeddah</option>
             <option value="Dammam">Dammam</option>
@@ -50,7 +68,7 @@
             <img class="up-form__img" src="../images/phone.png" width="22" height="18" alt="phone-number" />
               <label for="phone-number">Phone Number:</label>
         </div>
-          <input type="text" id="phone-number" name="phone-number" required />
+          <input type="text" id="phone-number" name="phone_number" required />
         </div>
         <div class="up-form__group">
         <div class="up-form__wraper">
@@ -66,7 +84,7 @@
               <img class="up-form__img" src="../images/moon.png" width="17" height="19" alt="nights" />
               <label for="mak-nights">Nights:</label>
           </div>
-            <select id="mak-nights" name="mak-nights" required>
+            <select id="mak-nights" name="mak_nights" required>
               <option value="">MAK</option>
               <option value="mak-1">MAK 1</option>
               <option value="mak-2">MAK 2</option>
@@ -85,7 +103,7 @@
           <img class="up-form__img" src="../images/moon.png" width="17" height="19" alt="nights" />
               <label for="med-nights">Nights:</label>
           </div>
-            <select id="med-nights" name="med-nights" required>
+            <select id="med-nights" name="med_nights" required>
               <option value="">MED</option>
               <option value="med-1">MED 1</option>
               <option value="med-2">MED 2</option>
@@ -134,7 +152,7 @@
                 <button type="button" onclick="updateGuests('adults', -1)">
                   −
                 </button>
-                <input type="text" id="adults" value="0" readonly />
+                <input type="text" name="adults" id="adults" value="0" readonly />
                 <button type="button" onclick="updateGuests('adults', 1)">
                   +
                 </button>
@@ -148,7 +166,7 @@
                 <button type="button" onclick="updateGuests('children', -1)">
                   −
                 </button>
-                <input type="text" id="children" value="0" readonly />
+                <input type="text" name="children" id="children" value="0" readonly />
                 <button type="button" onclick="updateGuests('children', 1)">
                   +
                 </button>
@@ -162,7 +180,7 @@
                 <button type="button" onclick="updateGuests('infants', -1)">
                   −
                 </button>
-                <input type="text" id="infants" value="0" readonly />
+                <input type="text" id="infants" name="infants" value="0" readonly />
                 <button type="button" onclick="updateGuests('infants', 1)">
                   +
                 </button>

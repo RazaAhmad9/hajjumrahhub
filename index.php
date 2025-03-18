@@ -15,6 +15,10 @@ $safe_page = preg_replace('/[^a-zA-Z0-9_-]/', '', $page);
         case 'umrahpackage':
             include "./umrah-packages.php";
             break;
+
+        case 'thankyou':
+            include "./thankyou.php";
+            break;
         
         case 'about':
             include "./about.php";

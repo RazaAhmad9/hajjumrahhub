@@ -52,6 +52,7 @@
     </footer>
     <!-- Footer Section End -->
     <!-- Js Files -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/up-form.js"></script>
 </body>
