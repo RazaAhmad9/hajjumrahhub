@@ -46,46 +46,47 @@ document.addEventListener("click", function (event) {
   }
 });
 
-document
-  .getElementById("contactForm")
-  .addEventListener("submit", function (event) {
-    event.preventDefault();
-    let airportDeparture = document.getElementById("departure-airport").value;
-    let arrivalAirport = document.getElementById("arrival-airport").value;
-    let date = document.getElementById("date").value;
-    let phoneNumber = document.getElementById("phone-number").value;
-    let email = document.getElementById("email").value;
-    let makNights = document.getElementById("mak-nights").value;
-    let medNights = document.getElementById("med-nights").value;
-    let rooms = document.getElementById("rooms").value;
-    let adults = document.getElementById("adults").value;
-    let children = document.getElementById("children").value;
-    let infants = document.getElementById("infants").value;
-    let answer = document.getElementById("answer").value;
+const form = document.getElementById("contactForm");
+const result = document.getElementById("result");
 
-    Email.send({
-      SecureToken: "C973D7AD-F097-4B95-91F4-40ABC5567812",
-      To: "raza.ataki@gmail.com",
-      From: email,
-      Subject: "New Contact Form Submission",
-      Body: `<p><strong>Email:</strong> ${email}</p>
-        <p><strong>Phone Number:</strong> ${phoneNumber}</p>
-        <p><strong>Departure Airport:</strong> ${airportDeparture}</p>
-        <p><strong>Arrival Airport:</strong> ${arrivalAirport}</p>
-        <p><strong>Date:</strong> ${date}</p>
-        <p><strong>Makkah Nights:</strong> ${makNights}</p>
-        <p><strong>Medinah Nights:</strong> ${medNights}</p>
-        <p><strong>Rooms:</strong> ${rooms}</p>
-        <p><strong>Adults:</strong> 3</p>
-        <p><strong>Children:</strong> 2</p>
-        <p><strong>Infants:</strong> 1</p>
-        <p><strong>Additional Info:</strong> ${answer}</p>`,
-    }).then((response) => {
-      if (response === "OK") {
-        alert("Email sent successfully!");
-        document.getElementById("contactForm").reset();
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+  const object = Object.fromEntries(formData);
+  const json = JSON.stringify(object);
+
+  result.innerHTML = "Please wait...";
+
+  fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+    body: json,
+  })
+    .then(async (response) => {
+      let json = await response.json();
+      if (response.status == 200) {
+        result.innerHTML = json.message;
+        result.classList.remove("text-gray-500");
+        result.classList.add("text-green-500");
       } else {
-        alert("Error sending email: " + response);
+        console.log(response);
+        result.innerHTML = json.message;
+        result.classList.remove("text-gray-500");
+        result.classList.add("text-red-500");
       }
+    })
+    .catch((error) => {
+      console.log(error);
+      result.innerHTML = "Something went wrong!";
+    })
+    .then(function () {
+      form.reset();
+      setTimeout(() => {
+        result.style.display = "none";
+      }, 5000);
     });
-  });
+});

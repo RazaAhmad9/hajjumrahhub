@@ -199,4 +199,5 @@
           <button type="submit" class="primary-button">Submit</button>
         </div>
       </form>
+      <div id="result"></div>
     </div>
