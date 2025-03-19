@@ -78,13 +78,13 @@
         </div>
           <input type="email" id="email" name="email" />
         </div>
-        <div class="up-form__group up-form__group__items">
-          <div class="up-form__group__inner">
-          <div class="up-form__wraper">
-              <img class="up-form__img" src="../images/moon.png" width="17" height="19" alt="nights" />
-              <label for="mak-nights">Nights:</label>
-          </div>
-            <select id="mak-nights" name="mak_nights" required>
+
+        <div class="up-form__group">
+        <div class="up-form__wraper">
+          <img class="up-form__img" src="../images/moon.png" width="17" height="19" alt="nights" />
+          <label for="mak-nights">Nights:</label>
+        </div>
+        <select id="mak-nights" name="mak_nights" required>
               <option value="">MAK</option>
               <option value="mak-1">MAK 1</option>
               <option value="mak-2">MAK 2</option>
@@ -97,13 +97,14 @@
               <option value="mak-9">MAK 9</option>
               <option value="mak-10">MAK 10</option>
             </select>
-          </div>
-          <div class="up-form__group__inner">
-          <div class="up-form__wraper">
-          <img class="up-form__img" src="../images/moon.png" width="17" height="19" alt="nights" />
-              <label for="med-nights">Nights:</label>
-          </div>
-            <select id="med-nights" name="med_nights" required>
+        </div>
+
+        <div class="up-form__group">
+        <div class="up-form__wraper">
+        <img class="up-form__img" src="../images/moon.png" width="17" height="19" alt="nights" />
+        <label for="med-nights">Nights:</label>
+        </div>
+        <select id="med-nights" name="med_nights" required>
               <option value="">MED</option>
               <option value="med-1">MED 1</option>
               <option value="med-2">MED 2</option>
@@ -116,8 +117,8 @@
               <option value="med-9">MED 9</option>
               <option value="med-10">MED 10</option>
             </select>
-          </div>
         </div>
+
         <div class="up-form__group">
         <div class="up-form__wraper">
             <img class="up-form__img" src="../images/rooms.png" width="22" height="16" alt="rooms" />
@@ -188,14 +189,8 @@
             </div>
           </div>
         </div>
-        <div class="up-form__group">
-        <div class="up-form__wraper">
-            <img class="up-form__img" src="../images/checkanswer.png" width="21" height="15" alt="answer" />
-            <label for="answer">Answer:</label>
-        </div>
-          <input type="text" id="answer" name="answer" required />
-        </div>
         <div class="up-form__group up-form__footer">
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
           <button type="submit" class="primary-button">Submit</button>
         </div>
       </form>
