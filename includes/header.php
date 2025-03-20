@@ -1,4 +1,4 @@
-<?php include "./functions.php";?>
+<?php include "functions.php";?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,13 +19,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="css/global.css" type="text/css">
-    <link rel="stylesheet" href="css/font.css" type="text/css">
-    <link rel="stylesheet" href="css/navbar.css" type="text/css">
-    <link rel="stylesheet" href="css/home.css" type="text/css">
-    <link rel="stylesheet" href="css/umrah-packages.css" type="text/css">
-    <link rel="stylesheet" href="css/up-form.css" type="text/css">
-    <link rel="stylesheet" href="css/footer.css" type="text/css">
+
+    <link rel="stylesheet" href="../css/global.css" type="text/css">
+    <link rel="stylesheet" href="../css/font.css" type="text/css">
+    <link rel="stylesheet" href="../css/navbar.css" type="text/css">
+    <link rel="stylesheet" href="../css/home.css" type="text/css">
+    <link rel="stylesheet" href="../css/umrah-packages.css" type="text/css">
+    <link rel="stylesheet" href="../css/up-form.css" type="text/css">
+    <link rel="stylesheet" href="../css/footer.css" type="text/css">
 
     <!-- Preload Fonts -->
     <link rel="preload" href="/font/Montserrat-BlackItalic.woff2" as="font" type="font/woff2" crossorigin>
