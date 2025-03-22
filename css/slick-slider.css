@@ -36,5 +36,40 @@
 }
 
 .thumbnail-slider .slick-current img {
-  border-color: #007bff;
+  border-color: var(--primary-color);
+}
+
+.slick-prev,
+.slick-next {
+  background: var(--primary-color);
+  padding: 30px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  transition: var(--up-transition);
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: var(--white-color) !important;
+  opacity: 1;
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+  transform: translateY(2px);
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  background: var(--secondary-color);
+}
+
+.slick-prev:hover:before,
+.slick-next:hover:before {
+  color: var(--black-color) !important;
+  opacity: 1;
 }

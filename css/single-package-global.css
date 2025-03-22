@@ -8,14 +8,17 @@
   padding-bottom: 70px;
 }
 
-.up-single-umrahpkg .container {
+.up-single-umrahpkg main .container {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   gap: 30px;
 }
+.up-single-umrahpkg main .container .up-pkd-col {
+  width: 50%;
+}
 
-.up-pkd__heading {
+.up-single-umrahpkg main .container .up-pkd__heading {
   color: var(--primary-color);
 }
 
@@ -148,4 +151,45 @@
   display: flex;
   gap: 30px;
   align-items: center;
+}
+
+@media only screen and (max-width: 1250px) {
+  .slick-prev {
+    left: 10px;
+  }
+  .slick-next {
+    right: 10px;
+  }
+  .up-pkd__hotel_nights_container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .up-pkd__hotel_nights {
+    width: 100%;
+  }
+  .up-pkd__icons_container {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .up-single-umrahpkg main .container {
+    flex-direction: column;
+  }
+
+  .up-single-umrahpkg main .container .up-pkd-col {
+    width: 100%;
+  }
+
+  .slider-wrapper {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .up-pkd__btn_container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

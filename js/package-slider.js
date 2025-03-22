@@ -16,7 +16,21 @@ $(document).ready(function () {
     asNavFor: ".main-slider",
     infinite: false,
     focusOnSelect: true,
-    arrows: true,
-    dots: true,
+    arrows: false,
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        },
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
 });
