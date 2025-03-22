@@ -153,6 +153,16 @@
   align-items: center;
 }
 
+.up-accomm-feat__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.up-accomm-feat__col {
+  width: 50%;
+}
+
 @media only screen and (max-width: 1250px) {
   .slick-prev {
     left: 10px;

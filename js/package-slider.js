@@ -33,4 +33,12 @@ $(document).ready(function () {
       },
     ],
   });
+  $(".up-accomm-feat__slider").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: true, // Add arrows for navigation
+    dots: false, // Add dots for better UI
+  });
 });

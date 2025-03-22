@@ -73,3 +73,14 @@
   color: var(--black-color) !important;
   opacity: 1;
 }
+.up-accomm-feat__slider img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.up-accomm-feat__slider {
+  width: 100%;
+  max-width: 800px; /* Adjust as needed */
+  margin: auto;
+}
