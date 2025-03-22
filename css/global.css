@@ -10,11 +10,13 @@
   --bg-light-color: #ece9f2;
   --grey-color: #dedede5c;
   --offwhite-color: #d3dde4;
+  --light-black: rgba(0, 0, 0, 0.85);
+  --grey-border-color: #d9d9d9;
+
   --danger-color: #f44336;
   --success-color: #4caf50;
 
   --regular-font-size: 16px;
-
   --up-transition: all 0.3s ease;
 }
 
@@ -124,14 +126,105 @@ p {
   font-size: 16px;
   text-transform: uppercase;
   border-color: var(--secondary-color);
-  padding: 8px 30px;
-  height: 48px;
+  padding: 15px 30px;
   transition: var(--up-transition);
+  text-decoration: none;
 }
 
 .primary-button:hover {
   background-color: var(--secondary-color-hover);
   border-color: var(--secondary-color-hover);
+}
+
+.icon-btn-colored {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--black-color) !important;
+  background-color: var(--secondary-color);
+  display: inline-block;
+  border-radius: 30px;
+  padding: 5px 25px 5px 10px;
+  border: 3px solid var(--secondary-color);
+  transition: var(--up-transition);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-btn-colored .btn-icon {
+  height: 42px;
+  width: 42px;
+  margin-right: 14px;
+  background-color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  transition: var(--up-transition);
+}
+.icon-btn-colored .btn-icon svg {
+  height: 17px;
+  width: 11px;
+  fill: var(--black-color);
+  transition: var(--up-transition);
+}
+.icon-btn-colored:hover {
+  background: transparent;
+}
+
+.icon-btn-colored:hover .btn-icon {
+  background-color: var(--secondary-color);
+}
+
+.icon-btn-colored:hover .btn-icon svg {
+  fill: var(--white-color);
+}
+
+.icon-btn-outlined {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--black-color) !important;
+  background-color: transparent;
+  display: inline-block;
+  border-radius: 30px;
+  padding: 5px 25px 5px 10px;
+  border: 3px solid var(--secondary-color);
+  transition: var(--up-transition);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-btn-outlined .btn-icon {
+  height: 42px;
+  width: 42px;
+  margin-right: 14px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  transition: var(--up-transition);
+}
+.icon-btn-outlined .btn-icon svg {
+  width: 30px;
+  fill: var(--white-color);
+  transition: var(--up-transition);
+}
+.icon-btn-outlined:hover {
+  background: var(--secondary-color);
+}
+
+.icon-btn-outlined:hover .btn-icon {
+  background-color: var(--white-color);
+}
+
+.icon-btn-outlined:hover .btn-icon svg {
+  fill: var(--secondary-color);
 }
 
 .up-h2-heading {

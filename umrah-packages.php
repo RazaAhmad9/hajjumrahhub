@@ -17,13 +17,13 @@
   <p class="up-after-heading-text">03 Start Umrah Packages</p>
   <div class="up-all-umrah-packages__wrapper">
     <div class="up-all-umrah-packages__item">
-    <a href="/umrah-packages/?p=3-star-10-nights-umrah-package" class="up-umrah-package__link">
+    <a href="/umrah-packages/?page=three-star-10-nights-umrah-package" class="up-umrah-package__link">
         <img class="up-umrah-package__img" src="./images/3-Star-10-Nights-Economy-Umrah-Package.webp" alt="3 star 10 nights umrah package" width="283" height="235"/>
       </a>
-      <h3 class="up-umrah-package__title"><a href="/umrah-packages/?p=3-star-10-nights-umrah-package">3 Star 10 Nights Umrah Package</a></h3>
+      <h3 class="up-umrah-package__title"><a href="/umrah-packages/?page=three-star-10-nights-umrah-package">3 Star 10 Nights Umrah Package</a></h3>
       <p class="up-umrah-package__tagline">Perform Umrah with Best Price</p>
       <p class="up-umrah-package__price">£ 479</p>
-      <a href="/umrah-packages/?p=3-star-10-nights-umrah-package" class="up-umrah-package__btn">
+      <a href="/umrah-packages/?page=three-star-10-nights-umrah-package" class="up-umrah-package__btn">
         <span class="up-svg-wrapper">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 92.2 122.88" style="enable-background:new 0 0 92.2 122.88" xml:space="preserve"><style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;}</style><g><polygon class="st0" points="92.2,60.97 0,122.88 0,0 92.2,60.97"/></g></svg>
         </span>

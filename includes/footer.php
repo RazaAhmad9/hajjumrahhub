@@ -51,9 +51,19 @@
         </div>
     </footer>
     <!-- Footer Section End -->
+
+            <!-- jQuery & Slick JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
+
     <!-- Js Files -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="js/navbar.js"></script>
-    <script src="js/up-form.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/up-form.js"></script>
+    <script src="../js/package-slider.js"></script>
+
+
+
 </body>
 </html>

@@ -18,8 +18,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <!-- Css Styles -->
+    <!-- Slick CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"
+    />
 
+    <!-- Css Styles -->
     <link rel="stylesheet" href="../css/global.css" type="text/css">
     <link rel="stylesheet" href="../css/font.css" type="text/css">
     <link rel="stylesheet" href="../css/navbar.css" type="text/css">
@@ -27,6 +38,10 @@
     <link rel="stylesheet" href="../css/umrah-packages.css" type="text/css">
     <link rel="stylesheet" href="../css/up-form.css" type="text/css">
     <link rel="stylesheet" href="../css/footer.css" type="text/css">
+    <link rel="stylesheet" href="../css/slick-slider.css" type="text/css">
+    <link rel="stylesheet" href="../css/3-star-10-nights-umrah-package.css" type="text/css">
+    <link rel="stylesheet" href="../css/single-package-global.css" type="text/css">
+    <link rel="stylesheet" href="../css/404.css" type="text/css">
 
     <!-- Preload Fonts -->
     <link rel="preload" href="/font/Montserrat-BlackItalic.woff2" as="font" type="font/woff2" crossorigin>
@@ -48,4 +63,13 @@
     <link rel="preload" href="/font/Montserrat-Light.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/font/Montserrat-ExtraLightItalic.woff2" as="font" type="font/woff2" crossorigin>
 </head>
-<body>
+
+<?php
+$page = isset($_GET['page']) ? htmlspecialchars($_GET['page']) : ''; // Get the parameter safely
+
+$current_path = $_SERVER['REQUEST_URI']; // Get the current file path
+$body_class = (strpos($current_path, '/umrah-packages/') !== false) ? 'up-single-umrahpkg' : ''; // Check if the file is inside the 'umrah-packages' folder
+?>
+
+<body class="up-body <?php echo $page; ?> <?php echo $body_class; ?>">
+

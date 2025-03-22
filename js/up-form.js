@@ -41,7 +41,11 @@ document.addEventListener("click", function (event) {
   let dropdown = document.getElementById("guestDropdown");
   let inputField = document.getElementById("guestInput");
 
-  if (!dropdown.contains(event.target) && event.target !== inputField) {
+  if (
+    dropdown &&
+    !dropdown.contains(event.target) &&
+    event.target !== inputField
+  ) {
     dropdown.style.display = "none";
   }
 });
@@ -49,46 +53,48 @@ document.addEventListener("click", function (event) {
 const form = document.getElementById("contactForm");
 const result = document.getElementById("result");
 
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
+if (form) {
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
 
-  const formData = new FormData(form);
-  const object = Object.fromEntries(formData);
-  const json = JSON.stringify(object);
+    const formData = new FormData(form);
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
 
-  result.innerHTML = "Please wait...";
+    result.innerHTML = "Please wait...";
 
-  fetch("https://api.web3forms.com/submit", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Accept: "application/json",
-    },
-    body: json,
-  })
-    .then(async (response) => {
-      let json = await response.json();
-      if (response.status == 200) {
-        result.innerHTML = json.message;
-        result.classList.remove("hidden");
-        result.classList.remove("error");
-        result.classList.add("show");
-        result.classList.add("success");
-      } else {
-        result.innerHTML = json.message;
-        result.classList.remove("show");
-        result.classList.remove("success");
-        result.classList.add("hidden");
-        result.classList.add("error");
-      }
+    fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
     })
-    .catch((error) => {
-      result.innerHTML = "Something went wrong!";
-    })
-    .then(function () {
-      form.reset();
-      setTimeout(() => {
-        result.style.display = "none";
-      }, 5000);
-    });
-});
+      .then(async (response) => {
+        let json = await response.json();
+        if (response.status == 200) {
+          result.innerHTML = json.message;
+          result.classList.remove("hidden");
+          result.classList.remove("error");
+          result.classList.add("show");
+          result.classList.add("success");
+        } else {
+          result.innerHTML = json.message;
+          result.classList.remove("show");
+          result.classList.remove("success");
+          result.classList.add("hidden");
+          result.classList.add("error");
+        }
+      })
+      .catch((error) => {
+        result.innerHTML = "Something went wrong!";
+      })
+      .then(function () {
+        form.reset();
+        setTimeout(() => {
+          result.style.display = "none";
+        }, 5000);
+      });
+  });
+}

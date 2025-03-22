@@ -1,0 +1,19 @@
+.up-404 {
+  align-items: center;
+}
+
+.up-404::before {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.up-404 .container {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.up-404 p {
+  color: var(--white-color);
+}

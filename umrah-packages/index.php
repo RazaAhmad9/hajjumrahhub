@@ -2,7 +2,7 @@
 <?php include "../includes/nav.php"; ?>
 
 <?php
-$page = isset($_GET['p']) ? $_GET['p'] : 'home';
+$page = isset($_GET['page']) ? $_GET['page'] : 'home';
 
 // Sanitize the page name to prevent security issues
 $safe_page = preg_replace('/[^a-zA-Z0-9_-]/', '', $page);
@@ -11,12 +11,12 @@ $safe_page = preg_replace('/[^a-zA-Z0-9_-]/', '', $page);
 <main id="as-<?= $safe_page ?>">
     <?php
     switch ($page) {
-        case '3-star-10-nights-umrah-package':
-            include "./3-star-10-nights-umrah-package.php";
+        case 'three-star-10-nights-umrah-package':
+            include "./three-star-10-nights-umrah-package.php";
             break;
 
         default:
-            include "./home.php";
+            include "../404.php";
             break;
     }
     ?>

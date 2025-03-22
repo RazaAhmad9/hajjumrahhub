@@ -1,0 +1,40 @@
+/* Center the slider */
+.slider-wrapper {
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+}
+
+/* Main Slider */
+.main-slider img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Thumbnail Slider */
+.thumbnail-slider {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.thumbnail-slider .slick-slide {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.thumbnail-slider img {
+  width: 100px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.thumbnail-slider .slick-current img {
+  border-color: #007bff;
+}
