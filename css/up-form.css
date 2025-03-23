@@ -137,3 +137,8 @@ input {
   border: 1px solid var(--danger-color);
   background-color: var(--danger-color);
 }
+
+textarea {
+  resize: none;
+  padding: 10px;
+}

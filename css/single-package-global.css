@@ -14,6 +14,10 @@
   justify-content: center;
   gap: 30px;
 }
+
+.up-three-star-10-nights-umrah-package > .container {
+  padding-bottom: 100px;
+}
 .up-single-umrahpkg main .container .up-pkd-col {
   width: 50%;
 }
@@ -153,14 +157,136 @@
   align-items: center;
 }
 
-.up-accomm-feat__row {
-  display: flex;
+.up-single-umrahpkg main .container.up-accomm-feat__row {
+  gap: 0;
   align-items: center;
-  justify-content: center;
+}
+
+.up-accomm-feat {
+  background-color: var(--bg-dark-color);
+  padding: 100px 0;
+}
+
+.up-accomm-feat__row {
+  flex-wrap: wrap;
 }
 
 .up-accomm-feat__col {
   width: 50%;
+}
+
+.up-accomm-feat__right_col {
+  background-color: #fff;
+  padding: 50px;
+  display: flex;
+  border-radius: 4px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.up-accomm-feat__heading {
+  color: var(--primary-color);
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.up-accomm-feat__col__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.up-accomm-feat__col__heading span {
+  color: var(--primary-color);
+}
+
+.up-accomm-feat__col__tagline {
+  font-size: 15px;
+  color: var(--light-black);
+  margin-bottom: 13px;
+}
+.up-accomm-feat__stars {
+  margin-bottom: 30px;
+}
+.up-accomm-feat__stars svg {
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  fill: #ccdc33;
+  stroke: #ccdc33;
+  stroke-width: 2px;
+  margin-right: 3px;
+}
+
+.up-accomm-feat__stars svg.inactive {
+  fill: transparent;
+}
+
+.up-accomm-feat__col__desc {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.65);
+  line-height: 24px;
+}
+
+.up-accomm-feat__slider .slick-list.draggable {
+  box-shadow: 0 0 15px 8px #0002;
+}
+
+.up-single-umrahpkg
+  main
+  .container.up-accomm-feat__row.up-accomm-feat__row__reverse {
+  flex-direction: row-reverse;
+  margin-top: 70px;
+}
+
+.up-pkd__detail_container {
+  margin-top: 100px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.up-pkd__detail_inner_container {
+  background-color: var(--bg-dark-color);
+  width: 100%;
+}
+
+.up-pkd__detail_heading {
+  font-weight: 700;
+  color: var(--black-color);
+  text-transform: uppercase;
+}
+
+.up-pkd__detail_inner_heading {
+  color: var(--primary-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.up-pkd__detail_inner_container .up-form {
+  background: none;
+  max-width: 1070px;
+  margin: 0 auto;
+}
+.up-pkd__detail_inner_container .up-form form {
+  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  gap: 20px;
+}
+
+.up-pkd__detail_inner_container .up-form form .up-form__group label {
+  color: var(--black-color);
+}
+
+.up-pkd__detail_inner_container .up-form form button {
+  grid-row: 4;
+}
+
+.up-form__group_message {
+  grid-column: 1 / 3;
 }
 
 @media only screen and (max-width: 1250px) {
@@ -195,11 +321,37 @@
   .slider-wrapper {
     max-width: 100%;
   }
+
+  .up-accomm-feat__col {
+    width: 100%;
+  }
+
+  .up-accomm-feat__slider {
+    max-width: 100%;
+  }
+  .up-accomm-feat__right_col {
+    padding: 35px;
+  }
+}
+
+@media only screen and (max-width: 761px) {
+  .up-form__group_message,
+  .up-pkd__detail_inner_container .up-form form button {
+    grid-column: unset;
+    grid-row: unset;
+  }
 }
 
 @media only screen and (max-width: 480px) {
   .up-pkd__btn_container {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+@media only screen and (max-width: 416px) {
+  .up-pkd__detail_inner_container .up-form form {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
   }
 }

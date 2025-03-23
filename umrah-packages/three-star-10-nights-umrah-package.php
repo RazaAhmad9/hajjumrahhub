@@ -369,42 +369,190 @@ c1.1,0,1.9-0.9,1.9-1.9V37.8h-2.1H88z"
 
 <!-- Features Start Here -->
 
-<div class="container up-accomm-feat" id="up-accomm-feat">
-  <div class="up-accomm-feat__row">
+<div class="up-accomm-feat" id="up-accomm-feat">
+  <div class="container up-accomm-feat__row">
+    <h2 class="up-accomm-feat__heading">Accommodation Features</h2>
     <div class="up-accomm-feat__col up-accomm-feat__left_col">
-    <div class="up-accomm-feat__slider">
+     <div class="up-accomm-feat__slider">
         <div>
           <img
-            src="../images/three-star-10-nights-umrah-package-1.webp"
+            src="../images/al-kiswah-tower-1.jpg"
             alt="three-star-10-nights-umrah-package"
           />
         </div>
         <div>
           <img
-            src="../images/three-star-10-nights-umrah-package-2.webp"
+            src="../images/al-kiswah-tower-2.jpg"
             alt="three-star-10-nights-umrah-package"
           />
         </div>
         <div>
           <img
-            src="../images/three-star-10-nights-umrah-package-3.webp"
-            alt="three-star-10-nights-umrah-package"
-          />
-        </div>
-        <div>
-          <img
-            src="../images/three-star-10-nights-umrah-package-4.webp"
+            src="../images/al-kiswah-tower-3.jpg"
             alt="three-star-10-nights-umrah-package"
           />
         </div>
       </div>
     </div>
-    <div class="up-accomm-feat__col up-accomm-feat__right_col"></div>
+    <div class="up-accomm-feat__col up-accomm-feat__right_col">
+      <h3 class="up-accomm-feat__col__heading">Hotel <span>Al Kiswah Tower</span></h3>
+      <p class="up-accomm-feat__col__tagline">Hotel In Makkah</p>
+
+        <div class="up-accomm-feat__stars">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 28.5 27.2" style="enable-background:new 0 0 28.5 27.2;" xml:space="preserve" class="svg replaced-svg">
+            <g>
+              <polygon points="14.3,22.5 5.4,27.2 7.1,17.4 0,10.4 9.9,9 14.3,0 18.7,9 28.5,10.4 21.4,17.4 23.1,27.2 	"></polygon>
+            </g>
+            <title>undefined</title>
+          </svg>
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 28.5 27.2" style="enable-background:new 0 0 28.5 27.2;" xml:space="preserve" class="svg replaced-svg">
+            <g>
+              <polygon points="14.3,22.5 5.4,27.2 7.1,17.4 0,10.4 9.9,9 14.3,0 18.7,9 28.5,10.4 21.4,17.4 23.1,27.2 	"></polygon>
+            </g>
+            <title>undefined</title>
+          </svg>
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 28.5 27.2" style="enable-background:new 0 0 28.5 27.2;" xml:space="preserve" class="svg replaced-svg">
+            <g>
+              <polygon points="14.3,22.5 5.4,27.2 7.1,17.4 0,10.4 9.9,9 14.3,0 18.7,9 28.5,10.4 21.4,17.4 23.1,27.2 	"></polygon>
+            </g>
+            <title>undefined</title>
+          </svg>
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 28.5 27.2" style="enable-background:new 0 0 28.5 27.2;" xml:space="preserve" class="svg inactive replaced-svg">
+            <g>
+              <polygon points="14.3,22.5 5.4,27.2 7.1,17.4 0,10.4 9.9,9 14.3,0 18.7,9 28.5,10.4 21.4,17.4 23.1,27.2 	"></polygon>
+            </g>
+            <title>undefined</title>
+          </svg>
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 28.5 27.2" style="enable-background:new 0 0 28.5 27.2;" xml:space="preserve" class="svg inactive replaced-svg">
+            <g>
+              <polygon points="14.3,22.5 5.4,27.2 7.1,17.4 0,10.4 9.9,9 14.3,0 18.7,9 28.5,10.4 21.4,17.4 23.1,27.2 	"></polygon>
+            </g>
+            <title>undefined</title>
+          </svg>
+        </div>
+        <p class="up-accomm-feat__col__desc">
+        The ideal location for the guests of Allah because this 3-star hotel is just 10 minutes walking distance away from the sacred Masjid Al Haram. The rooms of the hotel are fully equipped and attached bathroom for each room. They offer the multi-services to their customers such as dining halls, 24/7 room services, complimentary Wi-Fi etc. Shuttle or transport service will be available with low-cost price. 
+        </p>
+    </div>
+  </div>
+  <div class="container up-accomm-feat__row up-accomm-feat__row__reverse">
+    <div class="up-accomm-feat__col up-accomm-feat__left_col">
+     <div class="up-accomm-feat__slider">
+        <div>
+          <img
+            src="../images/al-kiswah-tower-1.jpg"
+            alt="three-star-10-nights-umrah-package"
+          />
+        </div>
+        <div>
+          <img
+            src="../images/al-kiswah-tower-2.jpg"
+            alt="three-star-10-nights-umrah-package"
+          />
+        </div>
+        <div>
+          <img
+            src="../images/al-kiswah-tower-3.jpg"
+            alt="three-star-10-nights-umrah-package"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="up-accomm-feat__col up-accomm-feat__right_col">
+      <h3 class="up-accomm-feat__col__heading">Hotel <span>Dar Al Eiman Al Nour</span></h3>
+      <p class="up-accomm-feat__col__tagline">Hotel In Makkah</p>
+
+        <div class="up-accomm-feat__stars">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 28.5 27.2" style="enable-background:new 0 0 28.5 27.2;" xml:space="preserve" class="svg replaced-svg">
+            <g>
+              <polygon points="14.3,22.5 5.4,27.2 7.1,17.4 0,10.4 9.9,9 14.3,0 18.7,9 28.5,10.4 21.4,17.4 23.1,27.2 	"></polygon>
+            </g>
+            <title>undefined</title>
+          </svg>
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 28.5 27.2" style="enable-background:new 0 0 28.5 27.2;" xml:space="preserve" class="svg replaced-svg">
+            <g>
+              <polygon points="14.3,22.5 5.4,27.2 7.1,17.4 0,10.4 9.9,9 14.3,0 18.7,9 28.5,10.4 21.4,17.4 23.1,27.2 	"></polygon>
+            </g>
+            <title>undefined</title>
+          </svg>
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 28.5 27.2" style="enable-background:new 0 0 28.5 27.2;" xml:space="preserve" class="svg replaced-svg">
+            <g>
+              <polygon points="14.3,22.5 5.4,27.2 7.1,17.4 0,10.4 9.9,9 14.3,0 18.7,9 28.5,10.4 21.4,17.4 23.1,27.2 	"></polygon>
+            </g>
+            <title>undefined</title>
+          </svg>
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 28.5 27.2" style="enable-background:new 0 0 28.5 27.2;" xml:space="preserve" class="svg inactive replaced-svg">
+            <g>
+              <polygon points="14.3,22.5 5.4,27.2 7.1,17.4 0,10.4 9.9,9 14.3,0 18.7,9 28.5,10.4 21.4,17.4 23.1,27.2 	"></polygon>
+            </g>
+            <title>undefined</title>
+          </svg>
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 28.5 27.2" style="enable-background:new 0 0 28.5 27.2;" xml:space="preserve" class="svg inactive replaced-svg">
+            <g>
+              <polygon points="14.3,22.5 5.4,27.2 7.1,17.4 0,10.4 9.9,9 14.3,0 18.7,9 28.5,10.4 21.4,17.4 23.1,27.2 	"></polygon>
+            </g>
+            <title>undefined</title>
+          </svg>
+        </div>
+        <p class="up-accomm-feat__col__desc">
+        This 3-star hotel is located just 2-3 minutes walking distance to the Masjid E Nabvi. They provide the best services and facilities with great hospitality. But, no complimentary breakfast is included in their given services. All rooms are furnished and fitted out with attached bathroom. Jannat UL Baqi Graveyard is too near from this hotel which is around 5 minutes’ walk. They offer shuttle or transport service with low-cost price and the complimentary parking on the place. </p>
+    </div>
   </div>
 </div>
 
-<!-- Banner Ends Here -->
+<!-- Features Start Here -->
 
+<div class="up-pkd__detail_container container" id="up-pkd__detail_container">
+  <h2 class="up-pkd__detail_heading">Detail</h2>
+  <div class="up-pkd__detail_inner_container">
+    <div class="up-form">
+    <h3 class="up-pkd__detail_inner_heading">Inquiry Form</h3>
+
+        <form
+                id="contactForm"
+                class="contact-form"
+                action="https://api.web3forms.com/submit"
+                method="POST"
+              >
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="ab0c9348-af56-418a-b741-fd2748149933"
+                />
+                <input
+                  type="hidden"
+                  name="subject"
+                  value="New Contact Form Submission from Al Mutamir Travels"
+                />
+                <input type="hidden" name="from_name" value="Al Mutamir Travels" />
+                <input type="hidden" name="redirect" value="http://hajjumrahhub.test/?page=thankyou">
+                <!-- More custom ization options available in the docs: https://docs.web3forms.com -->
+                <div class="up-form__group up-form__group_name">
+                  <label for="name">Full Name *</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div class="up-form__group up-form__group_email">
+                  <label for="name">Email *</label>
+                  <input type="email" name="email" required>
+                </div>
+                <div class="up-form__group up-form__group_phone_number">
+                  <label for="phone_number">Phone Number *</label>
+                  <input type="text" name="phone_number" required>
+                </div>
+                <div class="up-form__group up-form__group_departure_date">
+                    <label for="date">Departure Date :</label>
+                    <input type="date" id="date" name="date" required />
+                </div>
+                <div class="up-form__group up-form__group_message">
+                  <label for="name">Message *</label>
+                  <textarea name="message" rows="7" cols="50"  required></textarea>
+                </div>
+                <button type="submit" class="primary-button">Submit Form</button>
+        </form>
+        <div id="result"></div>
+    </div>
+  </div>
+</div>
 
 
 </div>

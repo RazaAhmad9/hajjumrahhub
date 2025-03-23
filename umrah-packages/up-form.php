@@ -13,7 +13,7 @@
         <input
           type="hidden"
           name="subject"
-          value="New Contact Form Submission from Al Mutamir Travels"
+          value="New Umrah Package Form Submission from Al Mutamir Travels"
         />
         <input type="hidden" name="from_name" value="Al Mutamir Travels" />
         <input type="hidden" name="redirect" value="http://hajjumrahhub.test/?page=thankyou">
@@ -195,4 +195,4 @@
         </div>
       </form>
       <div id="result"></div>
-    </div>
+</div>
